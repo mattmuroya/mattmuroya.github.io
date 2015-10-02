@@ -1,1 +1,176 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hi, I'm Matt. | Matt Muroya</title>
+    <meta name="description" content="Matt Muroya is a Minneapolis-based content strategist and information designer specializing in web design and communications.">
+
+    <meta name="keywords" content="Matt Muroya, content strategy, information architecture, web design, Minneapolis, MN, Minnesota">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+    <!-- jquery from google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- smooth scrolling-->
+    <script src="assets/js/smoothScroll.js" type="text/javascript"></script>
+
+    <!-- fade color of header on scroll-->
+    <script src="assets/js/navFade.js" type="text/javascript"></script>
+
+    <!-- email popup-->
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css">
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+
+    <header>
+        <div id="navlogo">
+            <a href="#top-anchor" class="smoothScroll"><img src="assets/images/logo.png"></a>
+        </div>
+        <div class="navlink">
+            <a href="#about-anchor" class="smoothScroll">ABOUT</a>
+        </div>
+        <div class="navlink">
+            <a href="#projects-anchor" class="smoothScroll">PROJECTS</a>
+        </div>
+        <div class="navlink">
+            <a href="#contact-anchor" class="smoothScroll">CONTACT</a>
+        </div>
+        <div id="social">
+            <a href="http://twitter.com/mattroya"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.linkedin.com/in/mattmuroya"><i class="fa fa-linkedin"></i></a>
+            <a href="http://www.youtube.com/c/MattMuroya"><i class="fa fa-youtube-play"></i></a>
+            <a href="http://soundcloud.com/mattmuroya"><i class="fa fa-soundcloud"></i></a>
+            <a href="http://codepen.io/mattmuroya/"><i class="fa fa-codepen"></i></a>
+        </div>
+    </header>
+    <a id="top-anchor"></a>
+    <div id="intro">
+        <div id="intro1">
+            <h1>Hi, I'm Matt.</h1></div>
+        <div id="intro2">
+            <div class="jumbo">It's nice to <a class="smoothScroll" href="#about-anchor">meet</a> you.<span id="blinking-cursor">|</span></div>
+        </div>
+
+
+
+        <div id="arrow">
+            <a href="#about-anchor" class="smoothScroll"><i class="fa fa-chevron-down"></i></a>
+        </div>
+    </div>
+    <a id="about-anchor"></a>
+    <div id="about">
+        <div class="jumbo">Let me introduce myself...</div>
+        <div class="box">
+            <h2><i class="fa fa-graduation-cap fa-lg"></i></h2>
+            <ul>
+                <li><i class="fa fa-pencil"></i>BS Technical Communication</li>
+                <li><i class="fa fa-file-code-o"></i>Computer Science Minor</li>
+                <li><i class="fa fa-file-text-o"></i>Information Technology minor</li>
+
+                <li><i class="fa fa-institution"></i>University of Minnesota</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2><i class="fa fa-cube fa-lg"></i></h2>
+            <ul>
+                <li><i class="fa fa-laptop"></i>Front-end UI and web design</li>
+                <li><i class="fa fa-user"></i>UX and usability testing</li>
+                <li><i class="fa fa-info"></i>Information architecture</li>
+                <li><i class="fa fa-lightbulb-o"></i>Content strategy</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2><i class="fa fa-thumbs-o-up fa-lg"></i></h2>
+            <ul>
+                <li><i class="fa fa-music"></i>Singing and guitar</li>
+                <li><i class="fa fa-gamepad"></i>Old school video games</li>
+                <li><i class="fa fa-bicycle"></i>Running and cycling</li>
+                <li><i class="fa fa-plane"></i>Traveling</li>
+            </ul>
+        </div>
+    </div>
+    <a id="projects-anchor"></a>
+    <div id="projects">
+        <div class="jumbo">Here's what I'm up to!</div>
+        <section>
+            <div class="item-left">
+                <a href="http://basseswild.com"><img src="assets/images/basseswild.png"></a>
+            </div>
+            <div class="description">
+                <h2><a href="http://basseswild.com">basseswild.com</a></h2>
+                <p>Basses Wild Men's A Cappella website. Fully responsive design. Went through the website design process from project planning and development to visual design and implementation in HTML and CSS. I actively maintain site content and domain and hosting records.<a href="http://basseswild.com">Visit Basses Wild <i class="fa fa-chevron-right"></i></a></p>
+            </div>
+        </section>
+    </div>
+    <div id="statement">
+        <div id="statement-text">
+            Advocate for the advancement of digital literacy. Fascinated by the always-on mobile generation and modern internet culture. Constantly learning more about web development, content strategy, and user-centered design and delivery.
+        </div>
+    </div>
+    <a id="contact-anchor"></a>
+    <div id="contact">
+        <input type="radio" id="open" name="contact-form">
+        <input type="radio" id="close" name="contact-form">
+        <div id="contact-text">
+            <div class="jumbo">Let's be friends.
+                <label class="text-button" for="open"><i class="fa fa-envelope"></i>&nbsp;&nbsp;hello@mattmuroya.com</label>
+
+            </div>
+            <!--
+            <div id="social2">
+                <a href="mailto:hello@mattmuroya.com"><i class="fa fa-envelope"></i></a>
+                <a href="http://www.linkedin.com/in/mattmuroya"><i class="fa fa-linkedin"></i></a>
+                <a href="http://twitter.com/mattroya"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.youtube.com/c/MattMuroya"><i class="fa fa-youtube-play"></i></a>
+                <a href="http://soundcloud.com/mattmuroya"><i class="fa fa-soundcloud"></i></a>
+                <a href="http://codepen.io/mattmuroya/"><i class="fa fa-codepen"></i></a>
+            </div>
+        -->
+        </div>
+
+        <div id="overlay"></div>
+        <div id="email-form">
+            <div id="email-form-title">Introduce yourself</div>
+            <form class="email" action="mailer.php" method="post">
+                <label id="close" for="close"><i class="fa fa-times-circle fa-lg"></i></label>
+                <input id="name" type="text" name="name" placeholder="Name (first and last)">
+                <input id="email" type="text" name="email" placeholder="Email (you@example.com)">
+                <textarea id="message" name="message" placeholder="Talk to me!"></textarea>
+                <button type="submit">Send&nbsp;&nbsp;<i class="fa fa-paper-plane fa-lg"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="copyright">© 2015 Matt Muroya</div>
+        <div id="email"><i class="fa fa-envelope"></i>&nbsp;&nbsp;hello@mattmuroya.com</div>
+    </footer>
+
+
+
+</body>
+
+</html>
