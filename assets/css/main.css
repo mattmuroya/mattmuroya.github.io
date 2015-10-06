@@ -4,7 +4,7 @@
 
 html {
     font-family: 'Abel', sans-serif;
-    color: #646464;
+    color: #999;
     background-color: #FFF;
     font-size: 1em;
     height: 100%;
@@ -18,7 +18,7 @@ h1, .jumbo {
 }
 
 h2 {
-    color: #722f37;
+    color: #5FD1C9;
     font-size: 1.5rem;
     padding-bottom: 20px;
 }
@@ -28,7 +28,7 @@ p {
 }
 
 a {
-    color: #722F37;
+    color: #5FD1C9;
     text-decoration: none;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -52,8 +52,8 @@ a:hover {
 =========================================*/
 
 header {
-    font-size: 1.2rem;
-    color: #EEE;
+    font-size: 1.4rem;
+    color: #ECF0F1;
     background: rgba(255, 255, 255, .0);
     width: 100%;
     height: 55px;
@@ -67,13 +67,15 @@ header {
     transition: 1s;
 }
 
+/*
 header a {
-    color: #EEE;
+    color: #ECF0F1;
 }
 
 header a:hover {
-    color: #722f37;
+    color: #5FD1C9;
 }
+*/
 
 #navlogo {
     padding-left: 20px;
@@ -86,7 +88,7 @@ header a:hover {
 }
 
 .navlink {
-    padding: 18px 0 0 15px;
+    padding: 18px 0 0 40px;
     float: left;
 }
 
@@ -96,32 +98,31 @@ header a:hover {
 }
 
 #social i {
-    padding-right: 12px;
+    padding-right: 20px;
 }
 
 .navbg-in {
-    color: #722F37;
-    background: rgba(255, 255, 255, .9);
-    box-shadow: 0 0 10px #444;
+    background: rgba(78,205,196, .8);
+/*    box-shadow: 0 0 10px #444;*/
 }
 
 .navbg-in a {
-    color: #722f37;
+    color: #FFF;
 }
 
 .navbg-in a:hover {
-    color: #999;
+/*    color: #999;*/
 }
 
 
 /*=== INTRO ===*/
 
 #intro {
-    color: #EEE;
+    color: #999;
     position: relative;
     text-align: center;
     line-height: 0;
-    background-color: #646464;
+/*    background-color: #646464;*/
     /*
     background: url(/assets/images/logo.png) no-repeat;
     background-attachment: fixed;
@@ -251,7 +252,7 @@ header a:hover {
         color: transparent;
     }
     50% {
-        color: #EEE;
+        color: #5FD1C9;
     }
 }
 
@@ -261,7 +262,7 @@ header a:hover {
         color: transparent;
     }
     50% {
-        color: #EEE;
+        color: #5FD1C9;
     }
 }
 
@@ -271,7 +272,7 @@ header a:hover {
         color: transparent;
     }
     50% {
-        color: #EEE;
+        color: #5FD1C9;
     }
 }
 
@@ -281,7 +282,7 @@ header a:hover {
         color: transparent;
     }
     50% {
-        color: #EEE;
+        color: #5FD1C9;
     }
 }
 
@@ -291,7 +292,7 @@ header a:hover {
         color: transparent;
     }
     50% {
-        color: #EEE;
+        color: #5FD1C9;
     }
 }
 
@@ -420,18 +421,18 @@ header a:hover {
     max-width: 1200px;
     font-size: 1.8rem;
     line-height: 3.2rem;
-    margin: 80px auto;
+    margin: 80px auto 0;
 }
 
 /*=== projects ===*/
 #projects {
-    background-color: #EEE;
+/*    background-color: #EEE;*/
     width: 100%;
     overflow: auto;
 }
 #projects section {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 .item-left {
     float: left;
@@ -453,58 +454,61 @@ header a:hover {
 
 /*=== CONTACT ===*/
 #contact {
-    position: relative;
-    background-color: #646464;
-    height: 50vh;
-    min-height: 400px;
+/*    position: relative;*/
+/*    height: 50vh;*/
+    height: 600px;
 /*    overflow:;*/
 }
 #contact-text {
     text-align: center;
-    color: #EEE;
+/*    color: #ECF0F1;*/
     margin: auto;
     white-space: nowrap;
 }
 #contact-text a {
-    color: #722f37;
+    color: #5FD1C9;
 }
 #contact-text a:hover {
     color: #999;
 }
 .text-button {
-    color: #999;
+/*    color: #999;*/
     text-align: center;
-    font-size: 4rem;
-    width: 100px;
+/*    font-size: 4rem;*/
+    width: 200px;
     padding: 20px;
-    margin: 60px auto;
-    border: solid 2px;
+    margin: 0 auto 80px;
+    border: solid 1px;
     display: block;
-    box-shadow: 5px 5px 0 #222;
-    -ms-transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    box-shadow: 5px 5px 0 #5FD1C9;
+    -ms-transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
 .text-button:hover {
-    /*    color: #722f37;*/
-    
-    background-color: #722f37;
+    box-shadow: 5px 5px 0 #999;
 }
 #social2 {
     font-size: 2.5rem;
     white-space: nowrap;
+    position: relative;
+    top: 0;
+    left: 50%;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+#social2 i {
+    padding: 20px;
+}
 
 /*=== THANKs ===*/
 #thanks {
-    color: #EEE;
+    color: #ECF0F1;
     background-color: #646464;
     height: 100vh;
     margin-top: -50px;
@@ -526,14 +530,14 @@ header a:hover {
 padding: 0 0 40px;    
 }
 #thanks-text h2 {
-    color: #EEE;
+    color: #ECF0F1;
 }
 #thanks-text img {
     width: 100px;
     margin: auto;
 }
 #thanks-text a {
-    color: #EEE;
+    color: #ECF0F1;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -547,11 +551,11 @@ padding: 0 0 40px;
 /*=== FOOTER ===*/
 footer {
     font-size: .9rem;
-    color: #EEE;
-    background: #722f37;
+/*    color: #ECF0F1;*/
+/*    background: #5FD1C9;*/
     width: 100%;
     height: 50px;
-    clear: both;
+/*    clear: both;*/
 }
 footer #copyright {
     float: left;
@@ -580,7 +584,7 @@ footer #copyright {
 #email-form-title {
     text-align: center;
     font-size: 1.6rem;
-    color: #EEE;
+    color: #ECF0F1;
     padding-bottom: 40px;
 }
 #email-form {
@@ -588,7 +592,7 @@ footer #copyright {
     bottom: -10%;
     left: 50%;
     background: rgba(114, 47, 55, .9);
-    /*    box-shadow: 10px 10px 50px 20px #722f37;*/
+    /*    box-shadow: 10px 10px 50px 20px #5FD1C9;*/
     width: 90%;
     max-width: 400px;
     max-height: 800px;
@@ -614,7 +618,7 @@ footer #copyright {
     border: 3px solid #999;
     width: 95%;
     font-size: 1.2rem;
-    /*    color: #722f37;*/
+    /*    color: #5FD1C9;*/
 }
 #email-form textarea {
     font-family: inherit;
@@ -624,13 +628,13 @@ footer #copyright {
     height: 100px;
     width: 95%;
     font-size: 1.2rem;
-    /*    color: #722f37;*/
+    /*    color: #5FD1C9;*/
 }
 #email-form button {
     font-family: inherit;
     font-size: inherit;
     float: right;
-    color: #EEE;
+    color: #ECF0F1;
     background: none;
     border: none;
     font-size: 1.2rem;
@@ -745,7 +749,12 @@ label:hover {
     h1, .jumbo {
         font-size: 2.2rem;
     }
-    
+    header {
+        font-size: 1.2rem;
+    }
+    .navlink {
+        padding-left: 18px;
+    }
     #intro {
         max-height: 770px;
         /*        max-height: 600px*/
@@ -810,7 +819,7 @@ label:hover {
     
     #projects section {
         width: 100%;
-        padding-bottom: 80px;
+/*        padding-bottom: 80px;*/
     }
     
     .item-left,
@@ -829,6 +838,9 @@ label:hover {
     
     .description h2 {
         text-align: center;
+    }
+    #contact {
+        height: 450px;
     }
     
     footer #copyright {
@@ -849,6 +861,13 @@ label:hover {
     .box {
         margin-left: 20%;
     }
+     #social2 {
+        font-size: 1.8rem;
+    }
+    #social2 i {
+        padding: 10px;
+    }
+    
 }
 @media only screen and (max-width: 600px) {
     .box {
@@ -869,7 +888,9 @@ label:hover {
     #social {
         display: none;
     }
-    
+   #social2 {
+       font-size: 1.2rem;
+   }
     .box {
         float: none;
         padding: 20px 0;
