@@ -11,7 +11,8 @@ html {
     overflow-x: hidden;
 }
 
-h1, .jumbo {
+h1,
+.jumbo {
     font-size: 4rem;
     text-align: center;
     padding: 80px 0;
@@ -67,6 +68,7 @@ header {
     transition: 1s;
 }
 
+
 /*
 header a {
     color: #ECF0F1;
@@ -102,8 +104,8 @@ header a:hover {
 }
 
 .navbg-in {
-    background: rgba(78,205,196, .8);
-/*    box-shadow: 0 0 10px #444;*/
+    background: rgba(78, 205, 196, .8);
+    /*    box-shadow: 0 0 10px #444;*/
 }
 
 .navbg-in a {
@@ -122,7 +124,7 @@ header a:hover {
     position: relative;
     text-align: center;
     line-height: 0;
-/*    background-color: #646464;*/
+    /*    background-color: #646464;*/
     /*
     background: url(/assets/images/logo.png) no-repeat;
     background-attachment: fixed;
@@ -426,7 +428,8 @@ header a:hover {
 
 /*=== projects ===*/
 #projects {
-/*    background-color: #EEE;*/
+    /*    background-color: #EEE;*/
+    
     width: 100%;
     overflow: auto;
 }
@@ -454,14 +457,16 @@ header a:hover {
 
 /*=== CONTACT ===*/
 #contact {
-/*    position: relative;*/
-/*    height: 50vh;*/
+    /*    position: relative;*/
+    /*    height: 50vh;*/
+    
     height: 600px;
-/*    overflow:;*/
+    /*    overflow:;*/
 }
 #contact-text {
     text-align: center;
-/*    color: #ECF0F1;*/
+    /*    color: #ECF0F1;*/
+    
     margin: auto;
     white-space: nowrap;
 }
@@ -472,9 +477,11 @@ header a:hover {
     color: #999;
 }
 .text-button {
-/*    color: #999;*/
+    /*    color: #999;*/
+    
     text-align: center;
-/*    font-size: 4rem;*/
+    /*    font-size: 4rem;*/
+    
     width: 200px;
     padding: 20px;
     margin: 0 auto 80px;
@@ -527,7 +534,7 @@ header a:hover {
     transform: translateX(-50%);
 }
 #thanks-text .jumbo {
-padding: 0 0 40px;    
+    padding: 0 0 40px;
 }
 #thanks-text h2 {
     color: #ECF0F1;
@@ -551,17 +558,17 @@ padding: 0 0 40px;
 /*=== FOOTER ===*/
 footer {
     font-size: .9rem;
-/*    color: #ECF0F1;*/
-/*    background: #5FD1C9;*/
+    /*    color: #ECF0F1;*/
+    /*    background: #5FD1C9;*/
+    
     width: 100%;
     height: 50px;
-/*    clear: both;*/
+    /*    clear: both;*/
 }
 footer #copyright {
     float: left;
     padding: 19px 0 0 40px;
 }
-
 #overlay {
     background: #000;
     position: fixed;
@@ -593,6 +600,7 @@ footer #copyright {
     left: 50%;
     background: rgba(114, 47, 55, .9);
     /*    box-shadow: 10px 10px 50px 20px #5FD1C9;*/
+    
     width: 90%;
     max-width: 400px;
     max-height: 800px;
@@ -746,15 +754,19 @@ label:hover {
 ******   RESPONSIVE small (iP5-GN6)  ******
 =========================================*/
 @media only screen and (max-width: 760px) {
-    h1, .jumbo {
+    h1,
+    .jumbo {
         font-size: 2.2rem;
     }
+    
     header {
         font-size: 1.2rem;
     }
+    
     .navlink {
         padding-left: 18px;
     }
+    
     #intro {
         max-height: 770px;
         /*        max-height: 600px*/
@@ -819,7 +831,7 @@ label:hover {
     
     #projects section {
         width: 100%;
-/*        padding-bottom: 80px;*/
+        /*        padding-bottom: 80px;*/
     }
     
     .item-left,
@@ -839,6 +851,7 @@ label:hover {
     .description h2 {
         text-align: center;
     }
+    
     #contact {
         height: 450px;
     }
@@ -861,13 +874,14 @@ label:hover {
     .box {
         margin-left: 20%;
     }
-     #social2 {
+    
+    #social2 {
         font-size: 1.8rem;
     }
+    
     #social2 i {
         padding: 10px;
     }
-    
 }
 @media only screen and (max-width: 600px) {
     .box {
@@ -888,9 +902,11 @@ label:hover {
     #social {
         display: none;
     }
-   #social2 {
-       font-size: 1.2rem;
-   }
+    
+    #social2 {
+        font-size: 1.2rem;
+    }
+    
     .box {
         float: none;
         padding: 20px 0;
@@ -913,6 +929,7 @@ label:hover {
     .box li .fa {
         width: 30px;
     }
+    
     footer {
         font-size: .9rem;
     }
