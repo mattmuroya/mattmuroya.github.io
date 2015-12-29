@@ -1,0 +1,268 @@
+/*=========================================
+******         BASIC ELEMENTS        ******
+=========================================*/
+
+html {
+    font-family: 'Oxygen', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 50px;
+        background: url(/assets/images/notebook.jpg);
+    background-size: cover;
+}
+
+h1,
+.jumbo {
+    font-family: Abel, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 40em) {
+    h1,
+    .jumbo {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+a {
+    /*    color: #5FD1C9;*/
+    color: teal;
+    font-weight: 700;
+    text-decoration: none;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#bg {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/images/notebook.jpg);
+    background-size: cover;
+}
+
+#intro {
+    opacity: .8;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+@media (min-width: 40em) {
+    #intro {
+        top: 40%;
+    }
+}
+
+#intro1 {
+    position: relative;
+    top: 3em;
+    opacity: 0;
+    -webkit-animation: fadein 2s .5s forwards;
+    animation: fadein 2s .5s forwards;
+}
+
+#intro2 {
+    position: relative;
+    top: 3em;
+    opacity: 0;
+    -webkit-animation: fadein 2s 1s forwards;
+    animation: fadein 2s 1s forwards;
+}
+
+#social {
+    position: relative;
+    margin-top: 2em;
+    top: 3em;
+    opacity: 0;
+    list-style-type: none;
+    -webkit-animation: fadein 2s 1.5s forwards;
+    animation: fadein 2s 1.5s forwards;
+}
+
+#social li {
+    margin: 1em;
+}
+
+@media (min-width: 40em) {
+    #social li {
+        display: inline;
+    }
+}
+
+
+/*
+
+#intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+}
+
+#intro1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-animation: fadein 2s .5s forwards;
+    -moz-animation: fadein 2s .5s forwards;
+    -ms-animation: fadein 2s .5s forwards;
+    -o-animation: fadein 2s .5s forwards;
+    animation: fadein 2s .5s forwards;
+}
+#intro2 {
+    position: relative;
+    top: 1em;
+    opacity: 0;
+    -webkit-animation: fadein 2s 1s forwards;
+    -moz-animation: fadein 2s 1s forwards;
+    -ms-animation: fadein 2s 1s forwards;
+    -o-animation: fadein 2s 1s forwards;
+    animation: fadein 2s 2.1s forwards;
+}
+*/
+
+@-webkit-keyframes fadein {
+    0% {}
+    100% {
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {}
+    100% {
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+@-ms-keyframes fadein {
+    0% {}
+    100% {
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+@-o-keyframes fadein {
+    0% {}
+    100% {
+        opacity: 1;
+        top: 0%;
+    }
+}
+
+@keyframes fadein {
+    0% {}
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+#blinking-cursor {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@-o-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@-ms-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@-moz-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+
+/*=========================================
+******             PAGE              ******
+=========================================*/
