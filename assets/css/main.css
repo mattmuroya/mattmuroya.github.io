@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Abel', sans-serif;
-    color: ;
+    color: #999;
     background-color: #FFF;
     text-align: center;
     font-size: 1em;
@@ -29,8 +29,9 @@ p {
 }
 
 a {
-    color: #999;
+    color: #722f37;
     text-decoration: none;
+    border-bottom: 0px #fff;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -39,7 +40,7 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: #999;
 }
 
 
@@ -61,11 +62,11 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
-    -ms-transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    -ms-transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #social {
@@ -77,7 +78,8 @@ header {
 }
 
 .navbg-in {
-    background: rgba(140, 140, 140, .9);
+    background-color: #722f37;
+    opacity: .8;
 }
 
 .navbg-in a {
@@ -85,7 +87,7 @@ header {
 }
 
 .navbg-in a:hover {
-    color: #000;
+    color: #ccc;
 }
 
 
