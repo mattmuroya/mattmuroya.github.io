@@ -79,7 +79,7 @@ header {
 
 .navbg-in {
     background-color: #722f37;
-    opacity: .8;
+    opacity: .9;
 }
 
 .navbg-in a {
@@ -87,7 +87,7 @@ header {
 }
 
 .navbg-in a:hover {
-    color: #ccc;
+    color: #999;
 }
 
 
