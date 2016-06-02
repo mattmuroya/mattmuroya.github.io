@@ -64,7 +64,7 @@ a:hover {
     position: relative;
     margin: auto;
     height: 100vh;
-    min-height: 400px;
+    min-height: 300px;
 }
 #content {
     position: relative;
