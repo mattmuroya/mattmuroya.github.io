@@ -60,18 +60,19 @@ a:hover {
 =========================================*/
 
 /*=== PEOPLE ===*/
-#content-wrapper {
+#content-wrap {
     position: relative;
-    
     margin: auto;
+    height: 100vh;
+    min-height: 400px;
 }
 #content {
-    position: absolute;
+    position: relative;
     text-align: justify;
     width: 80%;
     max-width: 600px;
     
-    top: 20%;
+    top: 25%;
     left: 55%;
     
     opacity: 0;
