@@ -12,8 +12,8 @@ html {
 */
 }
 body {
-    font-family: 'Abel', sans-serif;
-    text-align: center;
+/*    font-family: 'Abel', sans-serif;*/
+    font-family: 'helvetica', sans-serif;
     color: #999;
 /*    background: rgba(0, 0, 0, .4);*/
     font-size: 1em;
@@ -60,14 +60,29 @@ a:hover {
 =========================================*/
 
 /*=== PEOPLE ===*/
-
-#content {
-/*    height: 100vh;*/
-    min-height: 200px;
+#content-wrapper {
+    position: relative;
+    
     margin: auto;
-    padding-top: 200px;
+}
+#content {
+    position: absolute;
+    text-align: justify;
     width: 80%;
     max-width: 600px;
+    
+    top: 20%;
+    left: 55%;
+    
+    opacity: 0;
+    
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: fadein 2s .5s forwards;
+    animation: fadein 2s .5s forwards;
 }
 
 /*=========================================
@@ -76,11 +91,11 @@ a:hover {
 
 header {
     font-size: 1.4rem;
-    
+    text-align: center;
     color: #fff;
     background: rgba(255, 255, 255, 0);
     width: 100%;
-    height: 55px;
+    height: 70px;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -91,7 +106,7 @@ header {
     transition: 1.5s;
 }
 #home {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .navbg-in {
     background: rgba(0, 0, 0, .2);
@@ -106,8 +121,6 @@ header {
 /*=== INTRO ===*/
 
 #intro {
-    
-    color: #;
     position: relative;
     line-height: 0;
     height: 100vh;
@@ -119,7 +132,6 @@ header {
     top: 20%;
     left: 55%;
     opacity: 0;
-    white-space: nowrap;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -134,7 +146,6 @@ header {
     top: 40%;
     left: 55%;
     opacity: 0;
-    white-space: nowrap;
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -366,7 +377,7 @@ footer {
         font-size: 2rem;
     }
     
-    #content {
+    #content-wrapper {
         width: 80%;
         padding-top: 100px;
     }
