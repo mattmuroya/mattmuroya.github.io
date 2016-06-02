@@ -205,7 +205,8 @@ header {
     }
 }
 #blinking-cursor {
-    font-size: 1.1em;
+    font-size: 1.6em;
+    line-height: 1rem;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
