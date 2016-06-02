@@ -61,10 +61,10 @@ a:hover {
 
 /*=== PEOPLE ===*/
 #content-wrap {
-    position: relative;
+/*    position: relative;*/
     margin: auto;
     height: 100vh;
-    min-height: 300px;
+    min-height: 400px;
 }
 #content {
     position: relative;
