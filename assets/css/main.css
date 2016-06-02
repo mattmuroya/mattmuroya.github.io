@@ -13,7 +13,7 @@ html {
 }
 body {
 /*    font-family: 'Abel', sans-serif;*/
-    font-family: 'helvetica', sans-serif;
+    font-family: 'courier';
     color: #999;
 /*    background: rgba(0, 0, 0, .4);*/
     font-size: 1em;
@@ -205,6 +205,7 @@ header {
     }
 }
 #blinking-cursor {
+    font-size: 1.1em;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
