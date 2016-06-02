@@ -13,16 +13,16 @@ html {
 }
 body {
     font-family: 'Abel', sans-serif;
+    text-align: center;
     color: #999;
 /*    background: rgba(0, 0, 0, .4);*/
-    text-align: justify;
     font-size: 1em;
     height: 100%;
 /*    overflow-x: hidden;*/
 }
 h1,
 .jumbo {
-    text-align: center;
+    
     font-size: 4rem;
     margin: 80px 0;
 }
@@ -33,6 +33,7 @@ h2 {
 }
 p {
     line-height: 1.5rem;
+    padding-bottom: 1em;
 }
 ul {
     padding: 1em 0;
@@ -58,6 +59,16 @@ a:hover {
 ******      STRUCTURAL ELEMENTS      ******
 =========================================*/
 
+/*=== PEOPLE ===*/
+
+#content {
+/*    height: 100vh;*/
+    min-height: 200px;
+    margin: auto;
+    padding-top: 200px;
+    width: 80%;
+    max-width: 600px;
+}
 
 /*=========================================
 ******             HEADER            ******
@@ -65,7 +76,7 @@ a:hover {
 
 header {
     font-size: 1.4rem;
-    text-align: center;
+    
     color: #fff;
     background: rgba(255, 255, 255, 0);
     width: 100%;
@@ -79,11 +90,8 @@ header {
     -o-transition: 1.5s;
     transition: 1.5s;
 }
-#social {
-    padding-top: 5px;
-}
-#social i {
-    padding: 10px;
+#home {
+    margin-top: 15px;
 }
 .navbg-in {
     background: rgba(0, 0, 0, .2);
@@ -98,7 +106,7 @@ header {
 /*=== INTRO ===*/
 
 #intro {
-    text-align: center;
+    
     color: #;
     position: relative;
     line-height: 0;
@@ -308,7 +316,6 @@ header {
 /*=== ABOUT ===*/
 
 #about {
-    text-align: center;
     height: 100vh;
     min-height: 400px;
 }
@@ -327,23 +334,26 @@ header {
     transform: translateX(-50%);
 }
 
-/*=== PEOPLE ===*/
 
-.content {
-    height: 100vh;
-    min-height: 400px;
-    margin: auto;
-    padding: 100px;
-    width: 40%;
-}
 
 /*=== FOOTER ===*/
 
 footer {
-    text-align: center;
+    
     font-size: .9rem;
     width: 100%;
     height: 50px;
+}
+
+#copyright {
+/*    padding: 1em;*/
+}
+
+#social {
+    font-size: 1.2em;
+}
+#social i {
+    padding: 1rem .5rem 2rem;
 }
 
 /*=========================================
@@ -356,8 +366,8 @@ footer {
         font-size: 2rem;
     }
     
-    .content {
+    #content {
         width: 80%;
-        padding: 100px 10px;
+        padding-top: 100px;
     }
 }
