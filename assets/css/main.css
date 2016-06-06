@@ -68,27 +68,13 @@ img {
 /*=== PEOPLE ===*/
 #content-wrap {
     position: relative;
-    margin: 200px auto;
+    margin: 200px auto 50px;
     width: 80%;
     max-width: 600px;
 }
 #content {
     position: relative;
     text-align: justify;
-    
-    
-    top: 20%;
-    left: 55%;
-    
-    opacity: 0;
-    
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadein 2s .5s forwards;
-    animation: fadein 2s .5s forwards;
 }
 
 /*=========================================
@@ -387,10 +373,8 @@ footer {
     
     #content-wrap {
         width: 90%;
-        padding-top: 100px;
+        margin-top: 100px;
     }
     
-    #content {
-        top: 10%;
-    }
+   
 }
