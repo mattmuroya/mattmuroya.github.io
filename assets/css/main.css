@@ -43,7 +43,7 @@ ul li {
 }
 a {
     color: #999;
-    text-decoration: none;
+    text-decoration: ;
 /*    border-bottom: 0px #fff;*/
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -97,9 +97,7 @@ header {
     -o-transition: 1.5s;
     transition: 1.5s;
 }
-.home {
-    text-align: center;
-}
+
 .navbg-in {
     background: rgba(0, 0, 0, .2);
 }
