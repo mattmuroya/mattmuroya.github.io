@@ -346,9 +346,8 @@ header {
 
 footer {
     text-align: center;
-/*    font-size: .9rem;*/
     width: 100%;
-/*    height: 50px;*/
+    padding: 1em 0;
 }
 
 #copyright {
