@@ -33,7 +33,7 @@ h2 {
 }
 p {
     line-height: 1.5rem;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 ul {
     padding: 1em 0;
@@ -58,7 +58,7 @@ a:hover {
 img {
     width: 100%;
     
-    margin: 0 0 20px;
+    margin: 0 0 1em;
 }
 
 /*=========================================
@@ -68,9 +68,10 @@ img {
 /*=== PEOPLE ===*/
 #content-wrap {
     position: relative;
-    margin: 200px auto 50px;
+    margin: auto;
+    padding: 200px 0 50px;
     width: 80%;
-    max-width: 600px;
+    max-width: 550px;
 }
 #content {
     position: relative;
@@ -373,7 +374,7 @@ footer {
     
     #content-wrap {
         width: 90%;
-        margin-top: 100px;
+        padding-top: 100px;
     }
     
    
