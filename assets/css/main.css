@@ -74,7 +74,7 @@ img {
 }
 #content {
     position: relative;
-    text-align: justify;
+    text-align: center;
 }
 
 /*=========================================
@@ -87,7 +87,7 @@ header {
     color: #fff;
     background: rgba(255, 255, 255, 0);
     width: 100%;
-    height: 70px;
+    height: 55px;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -352,11 +352,11 @@ footer {
 /*    padding: 1em;*/
 }
 
-#social {
+#nav {
     font-size: 1.2em;
 }
-#social i {
-    padding: 1rem .5rem 2rem;
+#nav i {
+    padding: .8rem .5rem 2rem;
 }
 
 /*=========================================
