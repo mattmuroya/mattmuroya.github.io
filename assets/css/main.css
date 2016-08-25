@@ -80,7 +80,7 @@ img {
     text-align: center;
 }
 #social i {
-    padding: 0 .5em;
+    padding: 0 5em;
 }
 
 /*=========================================
@@ -200,60 +200,7 @@ header {
         left: 50%;
     }
 }
-#blinking-cursor {
-    font-size: 1.4em;
-    line-height: 1rem;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-@-o-keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #999;
-    }
-}
-@-ms-keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #999;
-    }
-}
-@-moz-keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #999;
-    }
-}
-@-webkit-keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #999;
-    }
-}
-@keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: #999;
-    }
-}
+
 #arrow {
     font-size: 2.5rem;
     position: relative;
