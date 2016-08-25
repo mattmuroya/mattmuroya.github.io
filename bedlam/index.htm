@@ -26,6 +26,10 @@
     <!-- jquery from google CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+    <!-- fancybox styles and jquery-->
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
     <!-- smooth scrolling-->
     <script src="/assets/js/smoothScroll.js" type="text/javascript"></script>
 
@@ -51,6 +55,8 @@
         <div id="content">
             <p><a href="/">home</a></p>
             <p>good morning bedlam’s prodigal release tour kickoff show. driftwood char bar in minneapolis, mn. 6/15/16.</p>
+
+            <a class="fancybox" rel="group" href="IMG_1566.JPG"><img src="IMG_1566.JPG" alt="" /></a>
 
             <img src="IMG_1566.JPG">
             <caption>IMG_1566</caption>
@@ -127,6 +133,12 @@
         <div id="copyright">© 2016 Matt Muroya</div>
     </footer>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+    
 </body>
 
 </html>
