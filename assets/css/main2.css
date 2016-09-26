@@ -113,11 +113,9 @@ header {
     display: inline;
     margin: 0 .25em;
 }
-.social i {
-}
 
 .spacer {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100%;
     padding: 2% 0%;
 }
@@ -310,15 +308,4 @@ footer {
 }
 #copyright {
     /*    padding: 1em;*/
-}
-
-/*=========================================
-******   RESPONSIVE small (iP5-GN6)  ******
-=========================================*/
-
-@media only screen and (max-width: 760px) {
-    h1,
-    .jumbo {
-        font-size: 2rem;
-    }
 }
