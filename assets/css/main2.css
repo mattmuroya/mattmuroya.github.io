@@ -72,6 +72,7 @@ img {
 =========================================*/
 
 header {
+    font-size: 1.4rem;
     
     background: rgba(255, 255, 255, 0);
     width: 100%;
@@ -85,12 +86,11 @@ header {
     -o-transition: 1.5s;
     transition: 1.5s;
 }
-#nav {
-    font-size: 1.4rem;
-    width: 100%;
+.nav {
+    float: left;
     padding: 2%;
 }
-#nav a {
+.nav a {
     text-decoration: none;
 }
 .navbg-in {
@@ -102,6 +102,20 @@ header {
 .navbg-in a:hover {
     color: #999;
 }
+
+.social {
+    float: right;
+    list-style-type;
+    padding: 2%;
+    margin: 0;
+}
+.social li {
+    display: inline;
+    margin: 0 .25em;
+}
+.social i {
+}
+
 .spacer {
     font-size: 1.4rem;
     width: 100%;
