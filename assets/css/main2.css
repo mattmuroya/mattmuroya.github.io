@@ -4,39 +4,14 @@
 
 html,
 body {
-/*    font-family: 'Abel', sans-serif;*/
+    /*    font-family: 'Abel', sans-serif;*/
     font-family: 'Roboto';
     font-size: 1em;
-    height: 100%;
     margin: 0;
     padding: 0;
-
-}
-h1,
-.jumbo {
-    
-    font-size: 4rem;
-    margin: 80px 0;
-}
-h2 {
-    color: #999;
-    font-size: 1.5rem;
-    padding-bottom: 20px;
-}
-p {
-    line-height: 1.5rem;
-    padding-bottom: 2em;
-}
-ul {
-    padding: 1em 0;
-}
-ul li {
-    padding: 1em 0;
 }
 a {
     color: inherit;
-    text-decoration: ;
-/*    border-bottom: 0px #fff;*/
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -46,34 +21,51 @@ a {
 a:hover {
     color: #999;
 }
+ul.main {
+    list-style: none;
+    width: 40%;
+    margin: 0% 0% 2% 0%;
+    padding: 0;
+    float: left;
+}
+ul.left {
+    list-style: none;
+    width: 26%;
+    margin: 0% 1% 2% 2%;
+    padding: 0;
+    float: left;
+}
+ul.right {
+    list-style: none;
+    width: 26%;
+    margin: 0% 2% 2% 1%;
+    padding: 0;
+    float: left;
+}
 
-img {
+ul li{
+    display: inline-block;
     width: 100%;
-    margin: 1em 0 0;
-}
-
-/*=========================================
-******      STRUCTURAL ELEMENTS      ******
-=========================================*/
-
-/*=== PEOPLE ===*/
-#content-wrap {
-    margin: auto;
-    padding: 100px 0 50px;
-    width: 90%;
-    max-width: 550px;
-}
-#content {
-    text-align: justify;
-}
-#social {
-    margin: auto;
-    padding: 0 0 1em;
+    margin-bottom: 2%;
+    padding: 0;
     text-align: center;
 }
-#social i {
-    padding: 0 .5em;
+img {
+    width: 100%;
 }
+
+.spacer {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 4%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /*=========================================
 ******             HEADER            ******
@@ -81,14 +73,10 @@ img {
 
 header {
     
-    font-size: 1.4rem;
-    text-align: center;
-/*    color: #fff;*/
     background: rgba(255, 255, 255, 0);
     width: 100%;
-    height: 55px;
     position: fixed;
-    top: 0;
+    clear: both;
     z-index: 999;
     
     -ms-transition: 1.5s;
@@ -97,13 +85,16 @@ header {
     -o-transition: 1.5s;
     transition: 1.5s;
 }
-
- i {
-    padding: .8rem .5rem .2rem;
+#nav {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 2%;
 }
-
+#nav a {
+    text-decoration: none;
+}
 .navbg-in {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .4);
 }
 .navbg-in a {
     color: #fff;
@@ -111,6 +102,15 @@ header {
 .navbg-in a:hover {
     color: #999;
 }
+.spacer {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 2%;
+}
+
+/*=========================================
+******             HEADER            ******
+=========================================*/
 
 /*=== INTRO ===*/
 
@@ -198,7 +198,6 @@ header {
         left: 50%;
     }
 }
-
 #arrow {
     font-size: 2.5rem;
     position: relative;
@@ -288,8 +287,6 @@ header {
     transform: translateX(-50%);
 }
 
-
-
 /*=== FOOTER ===*/
 
 footer {
@@ -297,9 +294,8 @@ footer {
     width: 100%;
     padding: 1em 0;
 }
-
 #copyright {
-/*    padding: 1em;*/
+    /*    padding: 1em;*/
 }
 
 /*=========================================
@@ -311,6 +307,4 @@ footer {
     .jumbo {
         font-size: 2rem;
     }
-    
-   
 }

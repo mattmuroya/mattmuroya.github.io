@@ -1,5 +1,6 @@
 #blinking-cursor {
     font-size: 1.4em;
+    line-height: 1rem;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
     -ms-animation: 1s blink step-end infinite;
@@ -12,7 +13,7 @@
         color: transparent;
     }
     50% {
-        color: #000;
+        color: inherit;
     }
 }
 @-ms-keyframes blink {
@@ -21,7 +22,7 @@
         color: transparent;
     }
     50% {
-        color: #000;
+        color: inherit;
     }
 }
 @-moz-keyframes blink {
@@ -30,7 +31,7 @@
         color: transparent;
     }
     50% {
-        color: #000;
+        color: inherit;
     }
 }
 @-webkit-keyframes blink {
@@ -39,7 +40,7 @@
         color: transparent;
     }
     50% {
-        color: #000;
+        color: inherit;
     }
 }
 @keyframes blink {
@@ -48,6 +49,6 @@
         color: transparent;
     }
     50% {
-        color: #000;
+        color: inherit;
     }
 }
