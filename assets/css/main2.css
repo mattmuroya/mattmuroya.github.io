@@ -59,10 +59,11 @@ img {
     padding: 2%;
 }
 .filter-spacer {
-    padding: 4%;
+    padding: 3%;
 }
 .content {
-    padding: 6% 2% 0%;
+    text-align: center;
+    padding: 3% 2% 0%;
     width: ;
     height: 100%;
 }
