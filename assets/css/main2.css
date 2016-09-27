@@ -56,20 +56,15 @@ img {
 }
 .header-spacer {
     font-size: 1.4rem;
-    width: 100%;
     padding: 2%;
 }
 .filter-spacer {
-    width: 100%;
-    padding: 1%;
+    padding: 1em;
 }
 .content {
     padding: 2%;
     width: 100%;
     height: 100%;
-}
-.content {
-    text-align: center;
 }
 .content-inner {
     width: 100%;
@@ -119,11 +114,7 @@ header {
     display: inline;
     margin: 0 .25em;
 }
-.spacer {
-    font-size: 1.4rem;
-    width: 100%;
-    padding: 2% 0%;
-}
+
 
 /*=========================================
 ******             FILTER            ******
@@ -196,15 +187,11 @@ input[type="radio"][id="concert"]:checked ~ .content-inner > .col > .lifestyle {
         font-size: 1.2rem;
         padding: 4% 2%;
     }
-    .spacer {
-        font-size: 1.2rem;
-        padding: 4% 0%;
-    }
+    
     div.main,
     div.left,
     div.right {
         width: 96%;
-        margin: 0% 2% 0% 2%;
         padding: 0;
         float: none;
     }
