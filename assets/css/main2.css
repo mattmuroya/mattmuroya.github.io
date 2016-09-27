@@ -33,11 +33,11 @@ a:hover {
     margin: 0% 1% 2% 1%;
 }
 .left {
-    width: 26%;
+    width: 28%;
     margin: 0%;
 }
 .right {
-    width: 26%;
+    width: 28%;
     margin: 0%;
 }
 .col > .photo {
@@ -63,7 +63,7 @@ img {
 }
 .content {
     padding: 2%;
-    width: 100%;
+    width: ;
     height: 100%;
 }
 .content-inner {
@@ -191,7 +191,7 @@ input[type="radio"][id="concert"]:checked ~ .content-inner > .col > .lifestyle {
     div.main,
     div.left,
     div.right {
-        width: 96%;
+        width: 100%;
         padding: 0;
         float: none;
     }
