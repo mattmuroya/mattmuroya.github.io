@@ -1,3 +1,5 @@
+/*BLINKING CURSOR*/
+
 #blinking-cursor {
     font-size: 1.4em;
     line-height: 1rem;
@@ -50,5 +52,75 @@
     }
     50% {
         color: inherit;
+    }
+}
+
+/*FADE-DOWN*/
+
+#arrow {
+    font-size: 2.5rem;
+    position: relative;
+    top: 65%;
+    left: 50%;
+    opacity: 0;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: fadedown 2s 3s forwards;
+    -moz-animation: fadedown 2s 3s forwards;
+    -ms-animation: fadedown 2s 3s forwards;
+    -o-animation: fadedown 2s 3s forwards;
+    animation: fadedown 2s 3s forwards;
+}
+@-webkit-keyframes fadedown {
+    0% {
+        opacity: 0;
+        top: 65%;
+    }
+    100% {
+        opacity: 1;
+        top: 70%;
+    }
+}
+@-moz-keyframes fadedown {
+    0% {
+        opacity: 0;
+        top: 65%;
+    }
+    100% {
+        opacity: 1;
+        top: 70%;
+    }
+}
+@-ms-keyframes fadedown {
+    0% {
+        opacity: 0;
+        top: 65%;
+    }
+    100% {
+        opacity: 1;
+        top: 70%;
+    }
+}
+@-o-keyframes fadedown {
+    0% {
+        opacity: 0;
+        top: 65%;
+    }
+    100% {
+        opacity: 1;
+        top: 70%;
+    }
+}
+@keyframes fadedown {
+    0% {
+        opacity: 0;
+        top: 65%;
+    }
+    100% {
+        opacity: 1;
+        top: 80%;
     }
 }

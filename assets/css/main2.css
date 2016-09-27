@@ -1,5 +1,5 @@
 /*=========================================
-******        BASIC ELEMENTS         ******
+******         BODY ELEMENTS         ******
 =========================================*/
 
 html,
@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 a {
     color: inherit;
     -o-transition: .5s;
@@ -18,9 +19,11 @@ a {
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 a:hover {
     color: #999;
 }
+
 ul.main {
     list-style: none;
     width: 42%;
@@ -28,6 +31,7 @@ ul.main {
     padding: 0;
     float: left;
 }
+
 ul.left {
     list-style: none;
     width: 26%;
@@ -35,6 +39,7 @@ ul.left {
     padding: 0;
     float: left;
 }
+
 ul.right {
     list-style: none;
     width: 26%;
@@ -43,13 +48,14 @@ ul.right {
     float: left;
 }
 
-ul li{
+ul li {
     display: inline-block;
     width: 100%;
     margin-bottom: 2%;
     padding: 0;
     text-align: center;
 }
+
 img {
     width: 100%;
 }
@@ -66,39 +72,41 @@ img {
 }
 
 
-
 /*=========================================
 ******             HEADER            ******
 =========================================*/
 
 header {
     font-size: 1.4rem;
-    
     background: rgba(255, 255, 255, 0);
     width: 100%;
     position: fixed;
     clear: both;
     z-index: 999;
-    
     -ms-transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -o-transition: 1.5s;
     transition: 1.5s;
 }
+
 .nav {
     float: left;
     padding: 2%;
 }
+
 .nav a {
     text-decoration: none;
 }
+
 .navbg-in {
     background: rgba(0, 0, 0, .4);
 }
+
 .navbg-in a {
     color: #fff;
 }
+
 .navbg-in a:hover {
     color: #999;
 }
@@ -109,6 +117,7 @@ header {
     padding: 2%;
     margin: 0;
 }
+
 .social li {
     display: inline;
     margin: 0 .25em;
@@ -121,191 +130,25 @@ header {
 }
 
 /*=========================================
-******             HEADER            ******
+******         RESPONSIVE            ******
 =========================================*/
 
-/*=== INTRO ===*/
-
-#intro {
-    position: relative;
-    line-height: 0;
-    height: 100vh;
-    min-height: 400px;
-}
-#intro1 {
-    width: 100%;
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadein 2s .5s forwards;
-    animation: fadein 2s .5s forwards;
-}
-#intro2 {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadein 2s 1.5s forwards;
-    animation: fadein 2s 1.5s forwards;
-}
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
+@media (max-width:768px) {
+    .nav,
+    .social {
+        font-size: 1.2rem;
+        padding: 4% 2%;
     }
-    100% {
-        opacity: 1;
-        left: 50%;
+    .spacer {
+        font-size: 1.2rem;
+        padding: 4% 0%;
     }
-}
-@-moz-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
+    ul.main,
+    ul.left,
+    ul.right {
+        width: 96%;
+        margin: 0% 2% 0% 2%;
+        padding: 0;
+        float: none;
     }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@-ms-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@-o-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-#arrow {
-    font-size: 2.5rem;
-    position: relative;
-    top: 65%;
-    left: 50%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadedown 2s 3s forwards;
-    -moz-animation: fadedown 2s 3s forwards;
-    -ms-animation: fadedown 2s 3s forwards;
-    -o-animation: fadedown 2s 3s forwards;
-    animation: fadedown 2s 3s forwards;
-}
-@-webkit-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-moz-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-ms-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-o-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 80%;
-    }
-}
-
-/*=== ABOUT ===*/
-
-#about {
-    height: 100vh;
-    min-height: 400px;
-}
-#about i {
-    margin: 25px;
-}
-#links {
-    width: 100%;
-    position: relative;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-/*=== FOOTER ===*/
-
-footer {
-    text-align: center;
-    width: 100%;
-    padding: 1em 0;
-}
-#copyright {
-    /*    padding: 1em;*/
 }
