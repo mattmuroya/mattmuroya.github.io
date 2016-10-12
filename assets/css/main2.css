@@ -136,6 +136,10 @@ label {
     transition: .5s;
 }
 
+.see-more {
+    opacity: 0;
+}
+
 /*when portrait is checked, do this to lifestyle and concert*/
 
 input[type="radio"][id="portrait"]:checked + label {
@@ -148,6 +152,15 @@ input[type="radio"][id="portrait"]:checked ~ .content-inner > .col > .concert {
     padding: 0;
     margin: 0;
     opacity: 0;
+}
+
+input[type="radio"][id="portrait"]:checked ~ .see-more {
+    opacity: 1;
+}
+
+input[type="radio"][id="portrait"]:checked ~ .see-more > .lifestyle,
+input[type="radio"][id="portrait"]:checked ~ .see-more > .concert {
+    display: none;
 }
 
 /*when lifestyle is checked, do this to portrait and concert*/
@@ -164,6 +177,15 @@ input[type="radio"][id="lifestyle"]:checked ~ .content-inner > .col > .concert {
     opacity: 0;
 }
 
+input[type="radio"][id="lifestyle"]:checked ~ .see-more {
+    opacity: 1;
+}
+
+input[type="radio"][id="lifestyle"]:checked ~ .see-more > .portrait,
+input[type="radio"][id="lifestyle"]:checked ~ .see-more > .concert {
+    display: none;
+}
+
 /*when concert is checked, do this to portrait and lifestyle*/
 
 input[type="radio"][id="concert"]:checked + label {
@@ -176,6 +198,15 @@ input[type="radio"][id="concert"]:checked ~ .content-inner > .col > .lifestyle {
     margin: 0;
     padding: 0;
     opacity: 0;
+}
+
+input[type="radio"][id="concert"]:checked ~ .see-more {
+    opacity: 1;
+}
+
+input[type="radio"][id="concert"]:checked ~ .see-more > .portrait,
+input[type="radio"][id="concert"]:checked ~ .see-more > .lifestyle {
+    display: none;
 }
 
 /*=========================================
