@@ -36,11 +36,11 @@ a:hover {
 */
 .left {
     width: 28%;
-    margin: 0% 1% 2% 21%;
+    margin: 0% .5% 2% 21%;
 }
 .right {
     width: 28%;
-    margin: 0% 21% 2% 1%;
+    margin: 0% 21% 2% .5%;
 }
 .col > .photo {
     width: 100%;
@@ -97,6 +97,10 @@ header {
 }
 .nav a {
     text-decoration: none;
+    margin-right: 20px;
+}
+.active-page {
+    color: #999;
 }
 .navbg-in {
     background: rgba(0, 0, 0, .4);
@@ -105,7 +109,10 @@ header {
     color: #fff;
 }
 .navbg-in a:hover {
-    color: #999;
+    color: #666;
+}
+.navbg-in a.active-page {
+    color: #666;
 }
 .social {
     float: right;
@@ -218,8 +225,12 @@ input[type="radio"][id="concert"]:checked ~ .see-more > .lifestyle {
 @media (max-width:768px) {
     .nav,
     .social {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 4% 2%;
+    }
+    
+    .nav a {
+        margin: none;
     }
     
     div.main,
