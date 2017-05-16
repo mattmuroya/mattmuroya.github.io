@@ -97,6 +97,7 @@ header {
 }
 .nav a {
     text-decoration: none;
+    margin-right: 20px;
 }
 .active-page {
     color: #999;
@@ -229,7 +230,7 @@ input[type="radio"][id="concert"]:checked ~ .see-more > .lifestyle {
     }
     
     .nav a {
-        margin: none;
+        margin-right: none;
     }
     
     div.main,
