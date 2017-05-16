@@ -225,7 +225,7 @@ input[type="radio"][id="concert"]:checked ~ .see-more > .lifestyle {
 @media (max-width:768px) {
     .nav,
     .social {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 4% 2%;
     }
     
