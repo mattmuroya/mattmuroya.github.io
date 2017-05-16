@@ -28,17 +28,19 @@ a:hover {
     padding: 0;
     float: left;
 }
+/*
 .main {
     width: 42%;
     margin: 0% 1% 2% 1%;
 }
+*/
 .left {
     width: 28%;
-    margin: 0%;
+    margin: 0% 1% 2% 21%;
 }
 .right {
     width: 28%;
-    margin: 0%;
+    margin: 0% 21% 2% 1%;
 }
 .col > .photo {
     width: 100%;
