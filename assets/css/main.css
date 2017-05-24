@@ -1,78 +1,58 @@
 /*=========================================
-******        BASIC ELEMENTS         ******
+******         BODY ELEMENTS         ******
 =========================================*/
 
 html,
 body {
-/*    font-family: 'Abel', sans-serif;*/
+    /*    font-family: 'Abel', sans-serif;*/
     font-family: 'Roboto';
     font-size: 1em;
-    height: 100%;
     margin: 0;
     padding: 0;
+}
 
-}
-h1,
-.jumbo {
-    
-    font-size: 4rem;
-    margin: 80px 0;
-}
-h2 {
-    color: #999;
-    font-size: 1.5rem;
-    padding-bottom: 20px;
-}
 p {
-    line-height: 1.5rem;
-    padding: 1em 0;
+    text-align: justify;
+    margin: 0 0 1em;
+    padding: 0;
+    line-height: 2em;
 }
-ul {
-    padding: 1em 0;
-}
-ul li {
-    padding: 1em 0;
-}
+
 a {
     color: inherit;
-    text-decoration: ;
-/*    border-bottom: 0px #fff;*/
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
 }
+
+label:hover,
 a:hover {
     color: #999;
 }
 
 img {
+    display: block;
     width: 100%;
-    margin: .5em 0 .5em;
 }
 
-/*=========================================
-******      STRUCTURAL ELEMENTS      ******
-=========================================*/
+.header-spacer {
+    font-size: 1.4rem;
+    padding: 2%;
+}
 
-/*=== PEOPLE ===*/
-#content-wrap {
-    margin: auto;
-    padding: 100px 0 50px;
-    width: 90%;
-    max-width: 550px;
+.photo-feed {
+    padding: 0% 9% 2%;
 }
-#content {
-    text-align: justify;
+
+.photo {
+    float: left;
+    padding: 0% 1% 2%;
 }
-#social {
-    margin: auto;
-    padding: 0 0 1em;
-    text-align: center;
-}
-#social i {
-    padding: 0 .5em;
+
+.half-width {
+    width: 48%;
 }
 
 /*=========================================
@@ -80,237 +60,83 @@ img {
 =========================================*/
 
 header {
-    
     font-size: 1.4rem;
-    text-align: center;
-/*    color: #fff;*/
     background: rgba(255, 255, 255, 0);
     width: 100%;
-    height: 55px;
     position: fixed;
-    top: 0;
+    clear: both;
     z-index: 999;
-    
     -ms-transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -o-transition: 1.5s;
     transition: 1.5s;
 }
-
- i {
-    padding: .8rem .5rem .2rem;
+.nav {
+    float: left;
+    padding: 2% 0% 2% 10%;
 }
-
+.nav a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+.active-page {
+    color: #999;
+}
 .navbg-in {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .4);
 }
 .navbg-in a {
     color: #fff;
 }
 .navbg-in a:hover {
-    color: #999;
+    color: #666;
 }
-
-/*=== INTRO ===*/
-
-#intro {
-    position: relative;
-    line-height: 0;
-    height: 100vh;
-    min-height: 400px;
+.navbg-in a.active-page {
+    color: #666;
 }
-#intro1 {
-    width: 100%;
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadein 2s .5s forwards;
-    animation: fadein 2s .5s forwards;
+.social {
+    float: right;
+    list-style-type;
+    padding: 2% 10% 2% 0%;
+    margin: 0;
 }
-#intro2 {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadein 2s 1.5s forwards;
-    animation: fadein 2s 1.5s forwards;
-}
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@-moz-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@-ms-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@-o-keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-@keyframes fadein {
-    0% {
-        opacity: 0;
-        left: 55%;
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-    }
-}
-
-#arrow {
-    font-size: 2.5rem;
-    position: relative;
-    top: 65%;
-    left: 50%;
-    opacity: 0;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-animation: fadedown 2s 3s forwards;
-    -moz-animation: fadedown 2s 3s forwards;
-    -ms-animation: fadedown 2s 3s forwards;
-    -o-animation: fadedown 2s 3s forwards;
-    animation: fadedown 2s 3s forwards;
-}
-@-webkit-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-moz-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-ms-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@-o-keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 70%;
-    }
-}
-@keyframes fadedown {
-    0% {
-        opacity: 0;
-        top: 65%;
-    }
-    100% {
-        opacity: 1;
-        top: 80%;
-    }
-}
-
-/*=== ABOUT ===*/
-
-#about {
-    height: 100vh;
-    min-height: 400px;
-}
-#about i {
-    margin: 25px;
-}
-#links {
-    width: 100%;
-    position: relative;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-
-
-/*=== FOOTER ===*/
-
-footer {
-    text-align: center;
-    width: 100%;
-    padding: 1em 0;
-}
-
-#copyright {
-/*    padding: 1em;*/
+.social li {
+    display: inline;
+    margin: 0 .25em;
 }
 
 /*=========================================
-******   RESPONSIVE small (iP5-GN6)  ******
+******         RESPONSIVE            ******
 =========================================*/
 
-@media only screen and (max-width: 760px) {
-    h1,
-    .jumbo {
-        font-size: 2rem;
+/* Standard iPad */
+@media (max-width:768px) {
+    .nav,
+    .social,
+    .header-spacer {
+        font-size: 1.2rem;
+        padding: 4% 2%;
     }
     
-   
+    .nav a {
+        margin-right: none;
+    }
+    
+    .photo-feed {
+        padding: 0% 2% ;
+    }
+    
+    .half-width {
+        width: 100%;
+    }
+}
+
+/* 4.7-inch iPhone */
+@media (max-width:375px) {
+    .nav,
+    .social,
+    .header-spacer {
+        font-size: 1rem;
+    }
 }
