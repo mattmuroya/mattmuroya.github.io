@@ -128,7 +128,7 @@ header {
     }
     
     .half-width {
-        width: 100%;
+        width: auto;
     }
 }
 
